@@ -2,7 +2,9 @@
 
 import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaXTwitter } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faXTwitter } from '@fortawesome/free-brands-svg-icons';
 
 const About = () => {
   const phrases = [
@@ -94,6 +96,9 @@ const About = () => {
             </a>
             <a href="https://linkedin.com/in/lipikaaggarwal" target="_blank" className="hover:text-white transition">
               <FaLinkedin />
+            </a>
+             <a href="https://x.com/Lipikaggarwal" target="_blank" className="hover:text-white transition">
+               <FontAwesomeIcon icon={faXTwitter} />
             </a>
             <a href="mailto:lipika.aggarwal@yahoo.com" className="hover:text-white transition">
               <FaEnvelope />
