@@ -200,7 +200,7 @@ const ContactForm = () => {
             required
             rows={5}
             className="w-full px-4 py-3 bg-transparent border border-gray-500/30 rounded-xl focus:outline-none focus:border-gray-400 transition-all duration-300 text-gray-100 placeholder-gray-400 resize-none"
-            placeholder="Let's build something amazing together..."
+            placeholder="Let&apos;s build something amazing together..."
           />
         </div>
 
