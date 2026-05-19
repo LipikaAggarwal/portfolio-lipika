@@ -6,25 +6,25 @@ import { motion } from "framer-motion";
 const contactDetails = [
   {
     title: "Email",
-    icon: <Mail size={44} className="text-gray-300" />,
+    icon: <Mail size={24} className="text-gray-300" />,
     value: "lipika.aggarwal@yahoo.com",
     link: "mailto:lipika.aggarwal@yahoo.com",
   },
   {
     title: "GitHub",
-    icon: <Github size={44} className="text-gray-300" />,
+    icon: <Github size={24} className="text-gray-300" />,
     value: "github.com/lipikaaggarwal",
     link: "https://github.com/lipikaaggarwal",
   },
   {
     title: "LinkedIn",
-    icon: <Linkedin size={44} className="text-gray-300" />,
+    icon: <Linkedin size={24} className="text-gray-300" />,
     value: "linkedin.com/in/lipikaaggarwal",
     link: "https://linkedin.com/in/lipikaaggarwal",
   },
   {
     title: "Location",
-    icon: <MapPin size={44} className="text-gray-300" />,
+    icon: <MapPin size={24} className="text-gray-300" />,
     value: "New Delhi, India",
     link: "",
   },
@@ -37,18 +37,18 @@ const ContactInfo = () => {
       initial={{ opacity: 0, x: -30 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6 }}
-      className="relative bg-transparent px-6 pt-12 pb-12 space-y-10 text-gray-200"
+      className="relative w-full max-w-xl mx-auto bg-transparent px-0 pt-16 pb-16 space-y-8 text-gray-200"
     >
-      {/* Top & Bottom Lines */}
-      <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-gray-400 via-gray-600 to-transparent" />
-      <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-gray-600 to-gray-400" />
+      {/* Top & Bottom thin lines aligned to container edges so gaps match padding */}
+      {/* <div className="absolute top-0 h-px bg-gray-200 left-4 sm:left-6 lg:left-8 xl:left-10 right-4 sm:right-6 lg:right-8 xl:right-10" />
+      <div className="absolute bottom-0 h-px bg-gray-200 left-4 sm:left-6 lg:left-8 xl:left-10 right-4 sm:right-6 lg:right-8 xl:right-10" /> */}
 
       {/* Contact Info List */}
       {contactDetails.map((item, idx) => (
-        <div key={idx} className="flex items-center gap-6">
-          <div className="flex-shrink-0">{item.icon}</div>
+        <div key={idx} className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+          <div className="flex-shrink-0 mt-1">{item.icon}</div>
           <div>
-            <h4 className="text-2xl font-bold tracking-wide text-gray-100">
+            <h4 className="text-xl font-semibold tracking-wide text-gray-100">
               {item.title}
             </h4>
             {item.link ? (

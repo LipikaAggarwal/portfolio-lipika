@@ -59,9 +59,14 @@ export default function Home() {
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-4xl font-bold text-center text-white">CONTACT</h2>
+        <div className="mb-6 pl-4">
+          <div className="flex flex-col items-start">
+            <span className="text-sm uppercase tracking-widest text-gray-400 mb-1">CONTACT</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-white">Let's Connect</h2>
+          </div>
+        </div>
 
-        <div className="flex flex-col lg:flex-row gap-36">
+        <div className="flex flex-col lg:flex-row gap-36 items-center">
           <div className="flex-2">
             <ContactForm />
           </div>

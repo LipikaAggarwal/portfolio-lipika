@@ -70,13 +70,16 @@ const Experience = () => {
       transition={{ duration: 0.6 }}
       className="min-h-screen py-20 px-6 sm:px-10 text-gray-200 scroll-mt-8"
     >
-      <h2 className="text-center text-4xl font-bold mb-16 text-gray-100">
-        EXPERIENCE
-      </h2>
-
       <div className="relative max-w-6xl mx-auto">
-        {/* Timeline Line */}
-        <div className="absolute top-0 left-[1rem] lg:left-1/2 transform lg:-translate-x-1/2 h-full w-1 bg-gradient-to-b from-gray-500 to-gray-700 shadow-md z-0"></div>
+        <div className="mb-20 pl-4">
+          <div className="flex flex-col items-start">
+            <span className="text-sm uppercase tracking-widest text-gray-400 mb-3">EXPERIENCE</span>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-100">Selected Highlights</h2>
+          </div>
+        </div>
+
+        {/* Timeline Line - start further below the header to add more gap */}
+        <div className="absolute top-28 lg:top-36 bottom-0 left-[1rem] lg:left-1/2 transform lg:-translate-x-1/2 w-1 bg-gradient-to-b from-gray-500 to-gray-700 shadow-md z-0"></div>
 
         <div className="flex flex-col gap-12">
           {experiences.map((exp, index) => (

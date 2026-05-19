@@ -38,10 +38,15 @@ const skills = [
 const AboutSection = () => {
   return (
     <section
-      className="w-full py-24 px-6 sm:px-10 flex flex-col gap-16 max-w-6xl mx-auto scroll-mt-4 text-white-200"
+      className="w-full py-24 px-4 sm:px-6 lg:px-8 xl:px-10 flex flex-col gap-16 max-w-6xl mx-auto scroll-mt-4 text-white-200"
       id="about"
     >
-      <h2 className="text-4xl font-bold text-center text-white">ABOUT</h2>
+      <div className="mb-6 pl-4">
+        <div className="flex flex-col items-start">
+          <span className="text-sm uppercase tracking-widest text-gray-400 mb-1">ABOUT</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-white">Who I Am</h2>
+        </div>
+      </div>
 
       <div className="flex flex-col lg:flex-row justify-between items-center gap-16">
         {/* Skills  */}
@@ -67,9 +72,7 @@ const AboutSection = () => {
 
         {/* Who I Am */}
         <div className="flex-1 max-w-lg">
-          <h3 className="text-5xl font-bold mb-4 bg-gradient-to-r from-gray-200 to-gray-400 text-transparent bg-clip-text">
-            Who I Am
-          </h3>
+          
           <p className="text-gray-300 text-sm sm:text-base leading-relaxed mb-4">
             I’m a B.Tech student in Energy Engineering driven by curiosity and a love for building things that matter. I’m always exploring how systems connect—whether it’s in code, design, or collaboration—and I find energy in turning ideas into purposeful, tangible outcomes.
           </p>

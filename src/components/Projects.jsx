@@ -6,6 +6,14 @@ import { Github, ExternalLink } from "lucide-react";
 
 const projects = [
   {
+  title: "Infant Heartrate Anomaly Detection",
+  description:
+    "A deep learning and GenAI-based system for analyzing infant heartbeat audio signals and detecting abnormal heartrate patterns using audio signal processing and model-based classification.",
+  image: ["/assets/heartbeat.png"],
+  github: "https://github.com/LipikaAggarwal/infant-heartbeat-detection",
+    tech: ["Python", "PyTorch", "Torchaudio", "Librosa", "GenAI"],
+  },
+  {
     title: "WildFire Segmentation",
     description:
       "A U-Net–based wildfire detection system that segments fire zones from aerial imagery for real-time disaster monitoring. Enhances emergency response and risk assessment through accurate visual analysis.",
@@ -30,14 +38,7 @@ const projects = [
     live: "https://lipikaaggarwal.github.io/LLM-Memory-Estimator",
     tech: ["HTML", "CSS", "JavaScript"],
   },
-  {
-    title: "Bank Management System",
-    description:
-      "A desktop application built using Python and Tkinter for managing user bank accounts with MySQL integration.",
-    image: ["/assets/bank.png"],
-    github: "https://github.com/LipikaAggarwal/Bank-Management-System",
-    tech: ["Python", "MySQL", "Tkinter"],
-  },
+
 ];
 
 const Projects = () => {
@@ -47,16 +48,14 @@ const Projects = () => {
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
-      className="py-16 px-6 sm:px-10 max-w-7xl mx-auto text-gray-200 scroll-mt-12"
+      className="py-16 px-4 sm:px-6 lg:px-8 xl:px-10 max-w-6xl mx-auto text-gray-200 scroll-mt-12 flex flex-col gap-16"
     >
-      <motion.h2
-        initial={{ opacity: 0, y: -20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, duration: 0.6 }}
-        className="text-3xl sm:text-4xl font-bold mb-12 text-center text-gray-100"
-      >
-        PROJECTS
-      </motion.h2>
+      <div className="mb-8 pl-4">
+        <div className="flex flex-col items-start">
+          <span className="text-sm uppercase tracking-widest text-gray-400 mb-1">PROJECTS</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-100">What I Have Built</h2>
+        </div>
+      </div>
 
       <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => {
@@ -146,7 +145,7 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="flex items-center gap-2 text-sm text-blue-300 hover:text-blue-200 transition"
                   >
-                    <ExternalLink size={16} /> Live Code
+                    <ExternalLink size={16} /> View Project
                   </a>
                 )}
               </div>
