@@ -45,10 +45,10 @@ const ContactInfo = () => {
 
       {/* Contact Info List */}
       {contactDetails.map((item, idx) => (
-        <div key={idx} className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
-          <div className="flex-shrink-0 mt-1">{item.icon}</div>
-          <div>
-            <h4 className="text-xl font-semibold tracking-wide text-gray-100">
+        <div key={idx} className="flex flex-col sm:flex-row items-start sm:items-center gap-2 sm:gap-3">
+          <div className="flex-shrink-0 mt-0.5 sm:mt-1">{item.icon}</div>
+          <div className="w-full">
+            <h4 className="text-lg sm:text-xl font-semibold tracking-wide text-gray-100">
               {item.title}
             </h4>
             {item.link ? (
@@ -56,12 +56,12 @@ const ContactInfo = () => {
                 href={item.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-base sm:text-lg text-gray-400 hover:text-gray-200 transition-all block mt-1"
+                className="text-sm sm:text-base lg:text-lg text-gray-400 hover:text-gray-200 transition-all block mt-1 break-all sm:break-normal"
               >
                 {item.value}
               </a>
             ) : (
-              <span className="text-base sm:text-lg text-gray-400 block mt-1">
+              <span className="text-sm sm:text-base lg:text-lg text-gray-400 block mt-1">
                 {item.value}
               </span>
             )}

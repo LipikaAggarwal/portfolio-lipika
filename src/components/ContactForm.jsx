@@ -144,15 +144,15 @@ const ContactForm = () => {
       initial={{ opacity: 0, x: 30 }}
       whileInView={{ opacity: 1, x: 0 }}
       transition={{ duration: 0.6 }}
-      className="relative w-full max-w-xl mx-auto"
+      className="relative w-full max-w-xl lg:max-w-4xl mx-auto"
     >
       <form
-        onSubmit={handleSubmit}
-        className="relative bg-transparent border border-gray-500/30 rounded-2xl p-8 space-y-6 backdrop-blur-md"
+          className="relative w-full max-w-xl lg:max-w-6xl mx-auto"
+        className="relative bg-transparent border border-gray-500/30 rounded-2xl p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-5 md:space-y-6 backdrop-blur-md"
       >
         {/* Name Field */}
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
+          <label htmlFor="name" className="block text-xs sm:text-sm font-medium text-gray-300 mb-2">
             Name
           </label>
           <motion.input
@@ -163,14 +163,14 @@ const ContactForm = () => {
             value={formData.from_name}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 bg-transparent border border-gray-500/30 rounded-xl focus:outline-none focus:border-gray-400 transition-all duration-300 text-gray-100 placeholder-gray-400"
+            className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-transparent border border-gray-500/30 rounded-xl focus:outline-none focus:border-gray-400 transition-all duration-300 text-sm sm:text-base text-gray-100 placeholder-gray-400"
             placeholder="Your name"
           />
         </div>
 
         {/* Email Field */}
         <div>
-          <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">
+          <label htmlFor="email" className="block text-xs sm:text-sm font-medium text-gray-300 mb-2">
             Email
           </label>
           <motion.input
@@ -181,14 +181,14 @@ const ContactForm = () => {
             value={formData.from_email}
             onChange={handleChange}
             required
-            className="w-full px-4 py-3 bg-transparent border border-gray-500/30 rounded-xl focus:outline-none focus:border-gray-400 transition-all duration-300 text-gray-100 placeholder-gray-400"
+            className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-transparent border border-gray-500/30 rounded-xl focus:outline-none focus:border-gray-400 transition-all duration-300 text-sm sm:text-base text-gray-100 placeholder-gray-400"
             placeholder="your.email@example.com"
           />
         </div>
 
         {/* Message Field */}
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">
+          <label htmlFor="message" className="block text-xs sm:text-sm font-medium text-gray-300 mb-2">
             Message
           </label>
           <motion.textarea
@@ -198,8 +198,8 @@ const ContactForm = () => {
             value={formData.message}
             onChange={handleChange}
             required
-            rows={5}
-            className="w-full px-4 py-3 bg-transparent border border-gray-500/30 rounded-xl focus:outline-none focus:border-gray-400 transition-all duration-300 text-gray-100 placeholder-gray-400 resize-none"
+            rows={4}
+            className="w-full px-3 sm:px-4 py-2 sm:py-3 bg-transparent border border-gray-500/30 rounded-xl focus:outline-none focus:border-gray-400 transition-all duration-300 text-sm sm:text-base text-gray-100 placeholder-gray-400 resize-none"
             placeholder="Let&apos;s build something amazing together..."
           />
         </div>
@@ -244,7 +244,7 @@ const ContactForm = () => {
           disabled={isSubmitting}
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
-          className="w-full flex items-center justify-center gap-3 px-6 py-4 rounded-full font-semibold 
+          className="w-full flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-2.5 sm:py-4 rounded-full font-semibold text-sm sm:text-base
                      bg-gradient-to-r from-gray-400 to-gray-600 
                      hover:from-gray-300 hover:to-gray-500 
                      transition-all duration-300 text-gray-900 shadow-md 
