@@ -147,8 +147,8 @@ const ContactForm = () => {
       className="relative w-full max-w-xl lg:max-w-4xl mx-auto"
     >
       <form
-          className="relative w-full max-w-xl lg:max-w-6xl mx-auto"
-        className="relative bg-transparent border border-gray-500/30 rounded-2xl p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-5 md:space-y-6 backdrop-blur-md"
+        onSubmit={handleSubmit}
+        className="relative w-full max-w-xl lg:max-w-6xl mx-auto relative bg-transparent border border-gray-500/30 rounded-2xl p-4 sm:p-6 md:p-8 space-y-4 sm:space-y-5 md:space-y-6 backdrop-blur-md"
       >
         {/* Name Field */}
         <div>
