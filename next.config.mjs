@@ -9,7 +9,7 @@ const nextConfig = {
       },
        {
         source: '/blogs',
-        destination: "https://lipika.dev/blogs",
+        destination: "https://myblogs-hazel.vercel.app",
       permanent: false,
       },
     ];
