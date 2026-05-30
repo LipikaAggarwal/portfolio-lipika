@@ -7,6 +7,10 @@ const nextConfig = {
         destination: 'https://drive.google.com/file/d/18nudYlHKhyCwWYryPDuwzWyfEFSyY-nT/view?usp=sharing',
         permanent: false,
       },
+       {
+        source: '/blogs',
+        permanent: false,
+      },
     ];
   },
 };
