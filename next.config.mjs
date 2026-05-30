@@ -9,7 +9,8 @@ const nextConfig = {
       },
        {
         source: '/blogs',
-        permanent: false,
+        destination: "https://lipika.dev/blogs",
+      permanent: false,
       },
     ];
   },
