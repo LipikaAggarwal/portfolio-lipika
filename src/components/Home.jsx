@@ -156,7 +156,16 @@ const About = () => {
                            border border-gray-500 text-gray-300
                            hover:bg-gray-200 hover:text-gray-900 transition"
               >
-                View My Work
+                My Work
+              </a>
+              <a
+                href="https://blog.lipika.dev"
+                target="_blank"
+                className="inline-block ml-4 px-6 py-3 rounded-xl font-semibold
+                           border border-gray-500 text-gray-300
+                           hover:bg-gray-200 hover:text-gray-900 transition"
+              >
+                My Blogs
               </a>
             </motion.div>
           </div>
